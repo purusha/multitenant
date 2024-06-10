@@ -1,0 +1,15 @@
+.classpath
+.project
+.settings/
+target/
+*~
+*.log
+*/activemq-data/
+.idea/
+*.iml
+*.ipr
+*.iws
+.pydevproject
+remote-log.conf
+.DS_Store
+.mvn/

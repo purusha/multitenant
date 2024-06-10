@@ -1,0 +1,24 @@
+version: "3.9"
+services:
+  artemis:
+    container_name: artemis
+    image: apache/activemq-artemis:2.30.0
+    volumes:
+      - artemis-data:/var/lib/artemis-instance
+    ports:
+      - 61613:61613
+      - 61616:61616
+      - 8161:8161
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+    logging:
+        driver: "local"
+        options:
+            max-size: "1m"
+    restart: "no"
+
+volumes:
+  artemis-data:
+

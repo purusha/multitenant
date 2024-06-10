@@ -1,0 +1,13 @@
+spring:
+  artemis:
+    broker-url: "tcp://localhost:61616"
+    user: artemis
+    password: artemis
+    mode: native
+
+logging:
+  level:
+    root: debug
+    org.apache.activemq.audit: debug
+    #root: debug
+#To specify a log level for all classes that don't have their own log level settings, the root logger can be set
